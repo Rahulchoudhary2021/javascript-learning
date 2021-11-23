@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clearInterval(fff)">STOP</button>
+   
+    <p id="dtc"></p>
+    <script>
+        var fff=setInterval(clockfun,1000);
+        function clockfun(){
+        var d= new Date();
+        var tt=d.toLocaleTimeString();
+        document.getElementById('dtc').innerHTML=tt;
+        }
+
+    </script>
+    
+</body>
+</html>
